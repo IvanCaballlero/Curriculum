@@ -1,0 +1,62 @@
+#generalEducationContainer{
+    height: 100vh; /*Cambiar este valor cuando halla scroll*/
+    width: 100%;
+    background: #fff;
+}
+
+#containerMainTitle{
+    position: absolute;
+    left: 0px;
+    /* background: red; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 230px;
+}
+
+#containerInformation{
+    background: #f4d644;
+    height: 200px;
+    width: 100%;
+    min-width: 800px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    margin: 0px 0px 0px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleName{
+    margin-left: 100px;
+    font-size: 50px;
+}
+
+#professionalTitle{
+    margin-left: 100px;
+    font-size: 25px;
+}
+
+#containerText{
+    /* background: red; */
+    padding: 10px;
+    text-align: justify;
+    position: absolute;
+    top: 40%;
+    width: 75%;
+    bottom: 0px;
+    /* height: 60%; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-items: center;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+#titleEducation{
+    font-size: 40px;
+    padding: 10px;
+}

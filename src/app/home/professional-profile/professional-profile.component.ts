@@ -1,0 +1,10 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-professional-profile',
+  templateUrl: './professional-profile.component.html',
+  styleUrls: ['./professional-profile.component.css']
+})
+export class ProfessionalProfileComponent {
+
+}

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('assets/fonts/Gill Sans.otf') format('opentype');
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans';
+}

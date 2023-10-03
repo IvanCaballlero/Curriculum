@@ -1,0 +1,96 @@
+<div id="containerGeneral">
+    <div id="containerLeft">
+        <div id="containerGeneralPhoto">
+            <div id="containerPhoto">
+                containerPhoto
+            </div>
+        </div>
+
+        <div id="containerInformationGeneral">
+            <div id="containerPhone" class="containerSectionInformationGeneral">
+                <i class="fa-duotone fa-circle-phone iconsInformationGeneral"></i>
+                <p id="phoneNumber" class="containerItemInformationGeneral">+57 3106706200</p>
+            </div>
+            <div id="containerEmail" class="containerSectionInformationGeneral">
+                <i class="fa-duotone fa-envelope-open iconsInformationGeneral"></i>
+                <p id="email" class="containerItemInformationGeneral">ivanf_59@hotmail.com</p>
+            </div>
+            <div id="containerLocation" class="containerSectionInformationGeneral">
+                <i class="fa-duotone fa-location-dot iconsInformationGeneral"></i>
+                <p id="location" class="containerItemInformationGeneral">Bogota D.C. - Colombia</p>
+            </div>
+        </div>
+
+        <ul id="containerSpecificInformation">
+            <li id="itemEducation" #itemEducation class="containerItemSpecificInformation" (click)="(changeVisibility(itemEducation.id))">
+                <div class="itemSpecificInformation glow">
+                    <div class="containerTextTitleSpecificInformation">
+                        <h2 class="titleSpecificInformation">EDUCACIÓN</h2>
+                    </div>
+                    
+                    <div class="containerHr">
+                        <hr class="separatorInformation">
+                    </div>
+                </div>
+            </li>
+            <li id="itemExpertise" #itemExpertise class="containerItemSpecificInformation" (click)="(changeVisibility(itemExpertise.id))">
+                <div class="itemSpecificInformation">
+                    <div class="containerTextTitleSpecificInformation">
+                        <h2 class="titleSpecificInformation">HABILIDADES</h2>
+                    </div>
+                    
+                    <div class="containerHr">
+                        <hr class="separatorInformation">
+                    </div>
+                </div>
+            </li>
+            <li id="itemLanguaje" #itemLanguaje class="containerItemSpecificInformation" (click)="(changeVisibility(itemLanguaje.id))">
+                <div class="itemSpecificInformation">
+                    <div class="containerTextTitleSpecificInformation">
+                        <h2 class="titleSpecificInformation">IDIOMAS</h2>
+                    </div>
+                    
+                    <div class="containerHr">
+                        <hr class="separatorInformation">
+                    </div>
+                </div>
+            </li>
+            <li id="itemProjects" #itemProjects class="containerItemSpecificInformation" (click)="(changeVisibility(itemProjects.id))">
+                <div class="itemSpecificInformation">
+                    <div class="containerTextTitleSpecificInformation">
+                        <h2 class="titleSpecificInformation">PROYECTOS</h2>
+                    </div>
+                    
+                    <div class="containerHr">
+                        <hr class="separatorInformation">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="containerRight">
+        <div id="containerHeaderRigth" #containerHeaderRigth class="visible">
+            containerHeaderRigth
+        </div>
+
+        <div id="containerModuleProfessionalProfile" #containerModuleProfessionalProfile>
+            <app-professional-profile></app-professional-profile>
+        </div>
+
+        <div id="containerModuleEducation" #containerModuleEducation class="visible">
+            <app-education></app-education>
+        </div>
+
+        <div id="containerModuleExpertise" #containerModuleExpertise class="visible">
+            <app-expertise></app-expertise>
+        </div>
+
+        <div id="containerModuleLanguaje" #containerModuleLanguaje class="visible">
+            <app-languaje></app-languaje>
+        </div>
+
+        <div id="containerModuleProjects" #containerModuleProjects class="visible">
+            <app-projects></app-projects>
+        </div>
+    </div>
+</div>

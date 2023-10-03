@@ -1,0 +1,170 @@
+#containerGeneral{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 100vh; /* Cambiar esto cuando ya halla scroll a 100% */
+}
+
+/*ESTILOS GLOBALES*/
+
+/*ESTILOS DE LA SECCION IZQUIERDA*/
+/*Estilo del contenedor izquierdo*/
+#containerLeft{
+    background: #2a2e36;
+    display: grid;
+    grid-template-rows: 40% 25% 35%;
+    align-items: center;
+    /* height: 100%; */
+}
+
+/*Estilo del contenedor de la foto*/
+#containerGeneralPhoto{
+    /* height: 250px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerPhoto{
+    background: #ffffff;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/*Estilo de la informacion general*/
+#containerInformationGeneral{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    align-items: center;
+}
+
+.containerSectionInformationGeneral{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 250px;
+}
+
+.iconsInformationGeneral{
+    font-size: 30px;
+    --fa-primary-opacity: 1.0;
+    --fa-secondary-opacity: 1.0;
+    margin: 10px;
+}
+
+.containerItemInformationGeneral{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.fa-circle-phone{
+    --fa-primary-color: #2a2e36;
+    --fa-secondary-color: #f4d644;
+}
+
+.fa-envelope-open{
+    --fa-primary-color: #f4d644;
+    --fa-secondary-color: #2a2e36;
+}
+
+.fa-location-dot{
+    --fa-primary-color: #2a2e36;
+    --fa-secondary-color: #f4d644;
+}
+
+/*Estilo de la informacion especifica*/
+.containerItemSpecificInformation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.itemSpecificInformation{
+    margin: 10px 0px;
+}
+
+.itemSpecificInformation:hover{
+    background: linear-gradient( #fff, #2a2e36);
+    background-size: 10000% 10000%;
+    animation: cambio-fondo 0.5s ease alternate forwards;
+    cursor: pointer;
+}
+
+@keyframes cambio-fondo {
+    0% {
+        background-position: 100% 0%;
+    }
+    10%{
+        background-position: 90% 10%;
+    }
+    20%{
+        background-position: 80% 20%;
+    }
+    30%{
+        background-position: 70% 30%;
+    }
+    40%{
+        background-position: 60% 40%;
+    }
+    50%{
+        background-position: 50% 50%;
+    }
+    60%{
+        background-position: 40% 60%;
+    }
+    70%{
+        background-position: 30% 70%;
+    }
+    80%{
+        background-position: 20% 80%;
+    }
+    90%{
+        background-position: 10% 90%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.containerTextTitleSpecificInformation{
+    width: 100%;
+    display: flex;
+}
+
+.titleSpecificInformation{
+    color: #ffffff;
+    width: 250px;
+}
+
+.titleSpecificInformation:hover{
+    color: #f4d644;
+}
+
+.containerHr{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.separatorInformation{
+    width: 265px;
+    border: 2px solid #f4d644;
+}
+
+/*ESTILOS DE LA SECCION DERECHA*/
+#containerRight{
+    background: #ffffff;
+}
+
+.visible{
+    display: none;
+}
+
+#containerModuleEducation{
+    display: none;
+}
