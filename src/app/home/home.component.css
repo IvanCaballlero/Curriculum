@@ -1,170 +1,238 @@
-#containerGeneral{
+/*1. Contenedor general*/
+#containerGeneral {
     display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 100vh; /* Cambiar esto cuando ya halla scroll a 100% */
+    min-width: 500px;
+    min-height: 600px;
+    grid-template-rows: 250px auto;
 }
 
-/*ESTILOS GLOBALES*/
-
-/*ESTILOS DE LA SECCION IZQUIERDA*/
-/*Estilo del contenedor izquierdo*/
-#containerLeft{
-    background: #2a2e36;
-    display: grid;
-    grid-template-rows: 40% 25% 35%;
-    align-items: center;
-    /* height: 100%; */
-}
-
-/*Estilo del contenedor de la foto*/
-#containerGeneralPhoto{
-    /* height: 250px; */
+/*2. Contenedor del header*/
+#containerHeader {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    min-height: 250px;
+    min-width: 500px;
+    /* background: red; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 60px;
 }
 
-#containerPhoto{
-    background: #ffffff;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-
-/*Estilo de la informacion general*/
-#containerInformationGeneral{
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0px;
-    align-items: center;
-}
-
-.containerSectionInformationGeneral{
+/*3. Contenedor de la informacion del header*/
+#containerInformationHeader {
+    height: 80%;
+    background: #f4d644;
+    width: 100%;
+    min-width: 440px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 250px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 
-.iconsInformationGeneral{
+/*4. Contenedor de la foto*/
+#containerGeneralPhoto {
+    height: 200px;
+    width: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 100px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*4. Contenedor de la información textual del header*/
+#informationHeader {
+    /* background: rosybrown; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*5. Titulo del nombre*/
+#titleName {
+    font-size: 50px;
+}
+
+/*5. Titulo de la posicion */
+#titlePosition {
+    font-size: 30px;
+}
+
+/*2. Contenedor de la informacion*/
+#containerInformation {
+    height: 100vh;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+/*3. Contenedor izquierdo de la pagina*/
+#containerLeft {
+    padding: 260px 0px 10px 40px;
+    background: #2a2e36;
+    display: grid;
+    grid-template-rows: 0.5fr 1.5fr;
+    height: 100vh;
+    min-width: 250px;
+}
+
+/*4. Contenedor de la información general*/
+#containerInformationGeneral {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px 0px; */
+    align-items: center;
+    justify-content: center;
+    /* max-width: 25%; */
+    width: 260px;
+}
+
+/*5. Secciones de información general */
+.containerSectionInformationGeneral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+/*6. Iconos de la informacion general */
+.iconsInformationGeneral {
     font-size: 30px;
     --fa-primary-opacity: 1.0;
     --fa-secondary-opacity: 1.0;
     margin: 10px;
 }
 
-.containerItemInformationGeneral{
-    color: #ffffff;
-    font-size: 20px;
-}
-
-.fa-circle-phone{
+/*6. Icono de telefono*/
+.fa-circle-phone {
     --fa-primary-color: #2a2e36;
     --fa-secondary-color: #f4d644;
 }
 
-.fa-envelope-open{
+/*6. Icono de carta abierta*/
+.fa-envelope-open {
     --fa-primary-color: #f4d644;
     --fa-secondary-color: #2a2e36;
 }
 
-.fa-location-dot{
+/*6. Icono de ubicacion*/
+.fa-location-dot {
     --fa-primary-color: #2a2e36;
     --fa-secondary-color: #f4d644;
 }
 
-/*Estilo de la informacion especifica*/
-.containerItemSpecificInformation{
+/*6. Contenedor textual de la informacion general*/
+.containerItemInformationGeneral {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*4. Contenedor de la información especifica */
+#containerSpecificInformation {
+    width: 260px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
-.itemSpecificInformation{
-    margin: 10px 0px;
+/*5. Contenedor de las secciones de la informacion especifica */
+.containerItemSpecificInformation {
+    display: flex;
+    flex-direction: column;
+    /* background: greenyellow; */
+    width: 100%;
 }
 
-.itemSpecificInformation:hover{
-    background: linear-gradient( #fff, #2a2e36);
+/*6. Secciones de la informacion especifica*/
+.itemSpecificInformation {
+    margin: 10px 0px 10px 10px;
+    width: calc(100% - 10px);
+}
+.itemSpecificInformation:hover {
+    background: linear-gradient(#fff, #2a2e36);
     background-size: 10000% 10000%;
     animation: cambio-fondo 0.5s ease alternate forwards;
     cursor: pointer;
 }
-
 @keyframes cambio-fondo {
     0% {
         background-position: 100% 0%;
     }
-    10%{
+
+    10% {
         background-position: 90% 10%;
     }
-    20%{
+
+    20% {
         background-position: 80% 20%;
     }
-    30%{
+
+    30% {
         background-position: 70% 30%;
     }
-    40%{
+
+    40% {
         background-position: 60% 40%;
     }
-    50%{
+
+    50% {
         background-position: 50% 50%;
     }
-    60%{
+
+    60% {
         background-position: 40% 60%;
     }
-    70%{
+
+    70% {
         background-position: 30% 70%;
     }
-    80%{
+
+    80% {
         background-position: 20% 80%;
     }
-    90%{
+
+    90% {
         background-position: 10% 90%;
     }
+
     100% {
         background-position: 0% 100%;
     }
 }
 
-.containerTextTitleSpecificInformation{
-    width: 100%;
-    display: flex;
-}
-
-.titleSpecificInformation{
+/*7. Texto de las secciones de información especifica*/
+.titleSpecificInformation {
     color: #ffffff;
-    width: 250px;
+    width: 100%;
+    font-size: 20px;
 }
-
-.titleSpecificInformation:hover{
+.titleSpecificInformation:hover {
     color: #f4d644;
 }
 
-.containerHr{
+/*7. Separador entre las secciones de la informacion especifica */
+.separatorInformation {
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.separatorInformation{
-    width: 265px;
     border: 2px solid #f4d644;
 }
 
-/*ESTILOS DE LA SECCION DERECHA*/
-#containerRight{
+/*3. Contenedor derecho de la pagina*/
+#containerRight {
     background: #ffffff;
+    padding: 260px 10px 0px 10px;
+    min-width: 250px;
 }
 
-.visible{
-    display: none;
-}
-
-#containerModuleEducation{
+/*3. Manejo de visibilidad de las diferentes seccion dinamicas*/
+.visible {
     display: none;
 }

@@ -6,25 +6,6 @@ import { ShareEventService } from 'src/app/core/services/share-event.service';
   selector: 'app-education',
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.css'],
-  animations: [
-    trigger('invisible', [
-      state('visible', style({
-        width: '100%',
-        opacity: '100%',
-      })),
-      state('invisible', style({
-        minWidth: '0%',
-        width: '200px',
-        borderTopRightRadius: '100px',
-        borderBottomRightRadius: '100px',
-        opacity: '-50%',
-      })),
-
-      transition('visible => invisible', [
-        animate('2s'),
-      ]),
-    ]),
-  ]
 })
 
 export class EducationComponent implements OnInit {
@@ -32,15 +13,9 @@ export class EducationComponent implements OnInit {
   @ViewChild('containerMainTitle') containerMainTitle!: ElementRef;
   @ViewChild('containerText') containerText!: ElementRef;
 
-  clicked: boolean = false
-
-  actualStateInvisible = 'visible';
-  actualStateOpacity = 'opaque';
-
-  constructor(
-    private shareEventService: ShareEventService,
-    private renderer: Renderer2
-  ) { }
+  hideMainTitle() {
+    alert('seccion educacion')
+  }
 
   ngOnInit() {
     this.shareEventService.event$.subscribe(() => {
@@ -48,14 +23,8 @@ export class EducationComponent implements OnInit {
     });
   }
 
-  hideMainTitle() {
-    this.actualStateInvisible = this.actualStateInvisible === 'visible' ? 'invisible' : 'visible';
-
-    setTimeout(() => {
-      this.renderer.setStyle(this.containerMainTitle.nativeElement, 'display', 'none');
-      this.renderer.setStyle(this.containerText.nativeElement, 'width', '100%');
-      this.renderer.setStyle(this.containerText.nativeElement, 'position', 'static');
-      this.renderer.setStyle(this.containerText.nativeElement, 'display', 'flex');
-    }, 2000)
-  }
+  constructor(
+    private shareEventService: ShareEventService,
+    private renderer: Renderer2
+  ) { }
 }
