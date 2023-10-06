@@ -1,10 +1,62 @@
+/*1. Contenedor general de la seccion de educación */
 #generalEducationContainer{
     height: 100%; /*Cambiar este valor cuando halla scroll*/
     width: 100%;
-    background: #c52c2c;
+    padding: 0px 10px 10px 10px;
 }
 
+/*2. Titulo de la seccion de educación */
 #titleEducation{
     font-size: 40px;
     text-align: center;
+    height: 50px;
+}
+
+/*2. Lista de estudios */
+#listStudies{
+    list-style: none;
+    /* background: blue; */
+    height: calc(100vh - 110px);
+    display: grid;
+    grid-auto-columns: 49%;
+    grid-auto-rows: 300px;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+}
+
+/*Items de cada estudio */
+.itemsStudies{
+    /* width: max-content; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #2a2e36;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px -5px rgba(42,46,54,1);
+}
+.itemsStudies:hover{
+    cursor: pointer;
+    background: #2a2e36;
+    color: #f4d644;
+    border: 1px solid #f4d644;
+}
+
+/*4. Texto de los titulos de estudios */
+.headingsStudies{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*4. Texto de las instituciones de estudios */
+.institutions{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*4. Texto de las fechas de estudios */
+.dates{
+    font-size: 15px;
 }

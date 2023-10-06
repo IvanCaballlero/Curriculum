@@ -106,6 +106,10 @@ export class HomeComponent {
             this.renderer.setStyle(this.containerRight.nativeElement, 'padding', '0px');
             //Redimencionar el ancho de la cabecera general
             this.renderer.setStyle(this.containerHeader.nativeElement, 'width', '300px');
+            //Redimencionar el ancho minimo de la cabecera general
+            this.renderer.setStyle(this.containerHeader.nativeElement, 'minWidth', '300px');
+            //Ocultar la informacion de la cabecera general
+            this.renderer.setStyle(this.informationHeader.nativeElement, 'display', 'none');
             //Mostrar la cabecera de la sección derecha de la pagina
             this.renderer.setStyle(this.containerHeaderRigth.nativeElement, 'display', 'flex');
             //Redimencionar el alto de la cabecera de la sección derecha de la pagina
@@ -139,6 +143,10 @@ export class HomeComponent {
             this.renderer.setStyle(this.containerRight.nativeElement, 'padding', '0px');
             //Redimencionar el ancho de la cabecera general
             this.renderer.setStyle(this.containerHeader.nativeElement, 'width', '300px');
+            //Redimencionar el ancho minimo de la cabecera general
+            this.renderer.setStyle(this.containerHeader.nativeElement, 'minWidth', '300px');
+            //Ocultar la informacion de la cabecera general
+            this.renderer.setStyle(this.informationHeader.nativeElement, 'display', 'none');
             //Mostrar la cabecera de la sección derecha de la pagina
             this.renderer.setStyle(this.containerHeaderRigth.nativeElement, 'display', 'flex');
             //Redimencionar el alto de la cabecera de la sección derecha de la pagina
@@ -172,6 +180,10 @@ export class HomeComponent {
             this.renderer.setStyle(this.containerRight.nativeElement, 'padding', '0px');
             //Redimencionar el ancho de la cabecera general
             this.renderer.setStyle(this.containerHeader.nativeElement, 'width', '300px');
+            //Redimencionar el ancho minimo de la cabecera general
+            this.renderer.setStyle(this.containerHeader.nativeElement, 'minWidth', '300px');
+            //Ocultar la informacion de la cabecera general
+            this.renderer.setStyle(this.informationHeader.nativeElement, 'display', 'none');
             //Mostrar la cabecera de la sección derecha de la pagina
             this.renderer.setStyle(this.containerHeaderRigth.nativeElement, 'display', 'flex');
             //Redimencionar el alto de la cabecera de la sección derecha de la pagina
