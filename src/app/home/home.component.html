@@ -47,10 +47,10 @@
                 </li>
             </ul>
         </div>
-        <div id="containerRight" #containerRight>
-            <!-- <div id="containerHeaderRigth" #containerHeaderRigth [@viewHeaderRight]="actualStateViewHeaderRight">
-                <h2>Perfil profesional</h2>
-            </div> -->
+        <div id="containerRight" #containerRight >
+            <div id="containerHeaderRigth" #containerHeaderRigth class="visible" (click)="(changeVisibility(containerHeaderRigth.id))">
+                <h2>PERFIL PROFESIONAL</h2>
+            </div>
     
             <div id="containerModuleProfessionalProfile" #containerModuleProfessionalProfile>
                 <app-professional-profile></app-professional-profile>

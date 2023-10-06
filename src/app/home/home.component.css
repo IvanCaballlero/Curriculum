@@ -232,7 +232,15 @@
     min-width: 250px;
 }
 
-/*3. Manejo de visibilidad de las diferentes seccion dinamicas*/
+#containerHeaderRigth{
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #f4d644;
+}
+
+/*4. Manejo de visibilidad de las diferentes seccion dinamicas*/
 .visible {
     display: none;
 }

@@ -9,7 +9,6 @@ import { ExpertiseComponent } from './home/expertise/expertise.component';
 import { LanguajeComponent } from './home/languaje/languaje.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { ProfessionalProfileComponent } from './home/professional-profile/professional-profile.component';
-import { ShareEventService } from './core/services/share-event.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
