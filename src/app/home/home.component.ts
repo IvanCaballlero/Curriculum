@@ -119,6 +119,7 @@ export class HomeComponent {
           }, 2000);
         }else if(this.actualStateChangeVisibility == 'invisible'){
           //Esconder las secciones de información especifica
+          this.renderer.setStyle(this.containerModuleProfessionalProfile.nativeElement, 'display', 'none');
           this.renderer.setStyle(this.containerModuleExpertise.nativeElement, 'display', 'none');
           this.renderer.setStyle(this.containerModuleProjects.nativeElement, 'display', 'none');
           //Mostar la sección en la que se dio click
@@ -156,6 +157,7 @@ export class HomeComponent {
           }, 2000);
         }else if(this.actualStateChangeVisibility == 'invisible'){
           //Esconder las secciones de información especifica
+          this.renderer.setStyle(this.containerModuleProfessionalProfile.nativeElement, 'display', 'none');
           this.renderer.setStyle(this.containerModuleEducation.nativeElement, 'display', 'none');
           this.renderer.setStyle(this.containerModuleProjects.nativeElement, 'display', 'none');
           //Mostar la sección en la que se dio click
@@ -193,6 +195,7 @@ export class HomeComponent {
           }, 2000);
         }else if(this.actualStateChangeVisibility == 'invisible'){
           //Esconder las secciones de información especifica
+          this.renderer.setStyle(this.containerModuleProfessionalProfile.nativeElement, 'display', 'none');
           this.renderer.setStyle(this.containerModuleEducation.nativeElement, 'display', 'none');
           this.renderer.setStyle(this.containerModuleExpertise.nativeElement, 'display', 'none');
           //Mostar la sección en la que se dio click

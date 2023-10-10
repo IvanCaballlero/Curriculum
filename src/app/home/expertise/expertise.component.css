@@ -1,0 +1,295 @@
+/*1. Contenedor general de la seccion de habilidades */
+#containerGeneralSkill{
+    width: 100%;
+    min-width: 630px;
+    height: calc(100vh - 50px);
+    /* background: red; */
+    padding: 0px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*2. Titulo de la seccion de habilidades*/
+#titleContainerGeneralSkill{
+    /* background: saddlebrown; */
+    height: max-content;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*2. Contenedor de los item de habilidades */
+#listSkill{
+    list-style: none;
+    /* background: wheat; */
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+/*3. Items de tipo de habilidades */
+.typeSkill{
+    /* background: blue; */
+    padding: 10px;
+    border: 1px solid #2a2e36;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    justify-items: center;
+    align-items: center;
+}
+
+/*4. Titulos de la seccion de habilidades*/
+.skillSectionTitles{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*4. Contenedor de los slider*/
+.containerSlider{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* NOTA: Se opta por hacer los estilos por separado debido a que en el .ts reconoce todas las clases de todas las secciones
+como uno, es decir toma todos los items como un solo slider */
+/*SLIDER DE LENGUAJES DE PROGRAMACION */
+/*5. Slider de la seccion de lenguajes de programación */
+#sliderProgrammingLanguaje{
+    display: flex;
+    height: 100%;
+    width: 300%; /*Cambiar segun la cantidad de imagenes ej: 4 = 400%, 2 = 200%, etc*/
+    margin-left: -100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*6. Secciones del slider que esta en los lenguajes de programación */
+.sliderSectionProgrammingLanguaje{
+    width: 100%;
+}
+
+/*7. Imagenes que estan en el slider dentro de los lenguajes de programación */
+.sliderImgProgrammingLanguaje{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+
+/*5. Botones para pasar el slider que esta en los lenguajes de programación */
+.sliderButtonsProgrammingLanguaje{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #2a2e36;
+    color: #f4d644;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sliderButtonsProgrammingLanguaje:hover{
+    background: #f4d644;
+    color: #2a2e36;
+}
+
+/*5. Boton derecho del slider que esta en los lenguajes de programación */
+#sliderButtonRightProgrammingLanguaje{
+    right: 10px;
+}
+
+/*5. Boton izquierdo del slider que esta en los lenguajes de programación */
+#sliderButtonLeftProgrammingLanguaje{
+    left: 10px;
+}
+
+/*SLIDER DE TECNOLOGIA WEB */
+/*5. Slider de la seccion de tecnologias web */
+#sliderWebTechnology{
+    display: flex;
+    height: 100%;
+    width: 400%; /*Cambiar segun la cantidad de imagenes ej: 4 = 400%, 2 = 200%, etc*/
+    margin-left: -100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*6. Secciones del slider que esta en tecnologias web */
+.sliderSectionWebTechnology{
+    width: 100%;
+}
+
+/*7. Imagenes que estan en el slider dentro de tecnologias web */
+.sliderImgWebTechnology{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+
+/*5. Botones para pasar el slider que esta en tecnologias web */
+.sliderButtonsWebTechnology{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #2a2e36;
+    color: #f4d644;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sliderButtonsWebTechnology:hover{
+    background: #f4d644;
+    color: #2a2e36;
+}
+
+/*5. Boton derecho del slider que esta en tecnologias web */
+#sliderButtonRightWebTechnology{
+    right: 10px;
+}
+
+/*5. Boton izquierdo del slider que esta en tecnologias web */
+#sliderButtonLeftWebTechnology{
+    left: 10px;
+}
+
+/*SLIDER BASE DE DATOS */
+/*5. Slider de la seccion base de datos */
+#sliderDataBase{
+    display: flex;
+    height: 100%;
+    width: 300%; /*Cambiar segun la cantidad de imagenes ej: 4 = 400%, 2 = 200%, etc*/
+    margin-left: -100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*6. Secciones del slider que esta en base de datos */
+.sliderSectionDataBase{
+    width: 100%;
+}
+
+/*7. Imagenes que estan en el slider dentro de base de datos */
+.sliderImgDataBase{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+
+/*5. Botones para pasar el slider que esta en base de datos */
+.sliderButtonsDataBase{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #2a2e36;
+    color: #f4d644;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sliderButtonsDataBase:hover{
+    background: #f4d644;
+    color: #2a2e36;
+}
+
+/*5. Boton derecho del slider que esta en base de datos */
+#sliderButtonRightDataBase{
+    right: 10px;
+}
+
+/*5. Boton izquierdo del slider que esta en base de datos */
+#sliderButtonLeftDataBase{
+    left: 10px;
+}
+
+/*SLIDER OTROS */
+/*5. Slider de la seccion base de datos */
+#sliderOther{
+    display: flex;
+    height: 100%;
+    width: 100%; /*Cambiar segun la cantidad de imagenes ej: 4 = 400%, 2 = 200%, etc*/
+    margin-left: -100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*6. Secciones del slider que esta en base de datos */
+.sliderSectionOther{
+    width: 100%;
+}
+
+/*7. Imagenes que estan en el slider dentro de base de datos */
+.sliderImgOther{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+
+/*5. Botones para pasar el slider que esta en base de datos */
+.sliderButtonsOther{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #2a2e36;
+    color: #f4d644;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sliderButtonsOther:hover{
+    background: #f4d644;
+    color: #2a2e36;
+}
+
+/*5. Boton derecho del slider que esta en base de datos */
+#sliderButtonRightOther{
+    right: 10px;
+}
+
+/*5. Boton izquierdo del slider que esta en base de datos */
+#sliderButtonLeftOther{
+    left: 10px;
+}
+
+/*7. Tecto de cada icono */
+.textIcon{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}

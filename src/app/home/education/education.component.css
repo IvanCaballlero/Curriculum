@@ -2,6 +2,7 @@
 #generalEducationContainer{
     height: 100%; /*Cambiar este valor cuando halla scroll*/
     width: 100%;
+    min-width: 630px;
     padding: 0px 10px 10px 10px;
 }
 
