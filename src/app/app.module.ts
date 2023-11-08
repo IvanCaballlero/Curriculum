@@ -9,6 +9,7 @@ import { ExpertiseComponent } from './home/expertise/expertise.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { ProfessionalProfileComponent } from './home/professional-profile/professional-profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PopUpEducationComponent } from './home/education/pop-up-education/pop-up-education.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EducationComponent,
     ExpertiseComponent,
     ProjectsComponent,
-    ProfessionalProfileComponent
+    ProfessionalProfileComponent,
+    PopUpEducationComponent
   ],
   imports: [
     BrowserModule,

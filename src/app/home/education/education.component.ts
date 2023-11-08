@@ -1,5 +1,6 @@
-import { animate, group, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { PopUpEducationComponent } from './pop-up-education/pop-up-education.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-education',
@@ -8,7 +9,11 @@ import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/co
 })
 
 export class EducationComponent implements OnInit {
+  openDialog(){
+    this.dialog.open(PopUpEducationComponent)
+  }
+
   ngOnInit() {}
 
-  constructor() { }
+  constructor(public dialog: MatDialog){}
 }
