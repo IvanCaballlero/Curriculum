@@ -1,5 +1,5 @@
 #containerGeneralProjects{
-    background-image: url(../../../assets/background/fondoNavidadCopia.svg);
+    background-image: url(../../../assets/images/background/fondoNavidad.svg);
     /* background-size: 100% 150%; */
     /* background-repeat: no-repeat; */
     height: calc(100vh - 50px);
@@ -14,9 +14,14 @@
     color: #F4D644;
     font-size: 35px;
     font-weight: bolder;
-    background: rgb(60, 82, 18, 0.5);
+    background: rgba(42, 18, 84, 0.6);
     height: 100%;
     width: 100%;
+}
+
+#containerGeneralProjects p{
+    font-weight: bold;
+    text-align: center;
 }
 
 #containerGeneralProjects img{
